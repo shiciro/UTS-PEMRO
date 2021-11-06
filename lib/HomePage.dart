@@ -22,7 +22,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Keranjang Belanja"),
+        title: Text("Main Menu"),
       ),
       body: ListView(children: [
         for (int i = 0; i < context.read<Database>().listPrice.length; i++)

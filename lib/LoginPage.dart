@@ -14,13 +14,14 @@ class LoginPage extends StatelessWidget {
           padding: EdgeInsets.all(10),
           margin: EdgeInsets.all(10),
           decoration: BoxDecoration(
-            color: Colors.white,
             borderRadius: BorderRadius.circular(10),
           ),
-          child: Text(
-            "Log In",
-            style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold),
-          ),
+          child: Row(children: [
+            Text(
+              "Log In",
+              style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold),
+            ),
+          ]),
         ),
         RoundedInputField(
           hintText: "Your Email",

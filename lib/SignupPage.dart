@@ -18,17 +18,24 @@ class SignUpScreen extends StatelessWidget {
             padding: EdgeInsets.all(10),
             margin: EdgeInsets.all(10),
             decoration: BoxDecoration(
-              color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
-            child: Text(
-              "Sign Up",
-              style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold),
-            ),
-          ),
-          Text(
-            "Create new account",
-            style: TextStyle(fontSize: 25, color: Colors.grey),
+            child: Column(children: [
+              SizedBox(
+                height: 30,
+              ),
+              Container(
+                alignment: Alignment.centerLeft,
+                child: Text("Sign Up",
+                    style:
+                        TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold)),
+              ),
+              Container(
+                alignment: Alignment.centerLeft,
+                child: Text("Create new account",
+                    style: TextStyle(fontSize: 25, color: Colors.grey)),
+              ),
+            ]),
           ),
           SizedBox(height: 25),
           RoundedInputField(

@@ -4,6 +4,7 @@ import 'package:widget/BuyPage.dart';
 import 'package:widget/HomePage.dart';
 import 'package:widget/LoginPage.dart';
 import 'package:widget/SignupPage.dart';
+import 'package:widget/constants.dart';
 import 'package:widget/providers/global.dart';
 
 //void main() {
@@ -25,6 +26,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        primaryColor: consPrimaryColor,
+        scaffoldBackgroundColor: consBackgroundColor,
+      ),
       initialRoute: '/',
       routes: <String, WidgetBuilder>{
         "/": (BuildContext context) => new LoginPage(),
