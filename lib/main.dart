@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         "/": (BuildContext context) => new LoginPage(),
         "buyPage": (BuildContext context) => new BuyPage(),
         "homePage": (BuildContext context) => new MyHomePage(),
-        "/signupPage": (BuildContext context) => new SignUpScreen(),
+        "signupPage": (BuildContext context) => new SignUpScreen(),
       },
     );
   }

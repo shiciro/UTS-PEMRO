@@ -1,3 +1,4 @@
-2021/11/06-17:50:14.269 3338 Reusing MANIFEST C:\Users\derry\AppData\Local\Temp\flutter_tools.f26ab085\flutter_tools_chrome_device.c625eb7\Default\Service Worker\Database/MANIFEST-000001
-2021/11/06-17:50:14.274 3338 Recovering log #3
-2021/11/06-17:50:14.274 3338 Reusing old log C:\Users\derry\AppData\Local\Temp\flutter_tools.f26ab085\flutter_tools_chrome_device.c625eb7\Default\Service Worker\Database/000003.log 
+2021/11/06-18:59:22.732 2b24 Reusing MANIFEST C:\Users\derry\AppData\Local\Temp\flutter_tools.d3981468\flutter_tools_chrome_device.db430bd5\Default\Service Worker\Database/MANIFEST-000001
+2021/11/06-18:59:22.747 2b24 Recovering log #3
+2021/11/06-18:59:22.747 2b24 (ignoring error) C:\Users\derry\AppData\Local\Temp\flutter_tools.d3981468\flutter_tools_chrome_device.db430bd5\Default\Service Worker\Database/000003.log: dropping 711 bytes; Corruption: checksum mismatch
+2021/11/06-18:59:22.748 2b24 Reusing old log C:\Users\derry\AppData\Local\Temp\flutter_tools.d3981468\flutter_tools_chrome_device.db430bd5\Default\Service Worker\Database/000003.log 
