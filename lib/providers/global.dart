@@ -5,9 +5,18 @@ import 'transferVariables.dart' as global;
 
 // set default values for the initial run
 class Database with ChangeNotifier {
-  List<String> listItem = ["Nama Barang 1", "Nama Barang 2", "Nama Barang 3"];
+  List<String> listItem = [
+    "Logitech G502",
+    "Logitech G413",
+    "Logitech Headphone"
+  ];
+  List<String> listImage = [
+    'images/image1.jpg',
+    'images/image2.jpg',
+    'images/image3.jpg'
+  ];
   List<int> listPrice = [325000, 425000, 625000];
-  List<int> listQuantity = [1, 1, 1];
+  List<int> listQuantity = [0, 1, 0];
 
   int get count => listItem.length;
   List<String> get cart => listItem;

@@ -24,7 +24,11 @@ class _BuyPageState extends State<BuyPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Detail Item"),
+        title: Text("Product Info"),
+        centerTitle: true,
+        foregroundColor: Colors.black,
+        backgroundColor: Colors.transparent,
+        elevation: 0.0,
       ),
       body: Column(children: [
         Container(

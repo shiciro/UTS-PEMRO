@@ -7,6 +7,8 @@ import 'package:widget/SignupPage.dart';
 import 'package:widget/constants.dart';
 import 'package:widget/providers/global.dart';
 
+import 'CartPage.dart';
+
 //void main() {
 //  runApp(MyApp());
 //}
@@ -34,6 +36,7 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         "/": (BuildContext context) => new LoginPage(),
         "buyPage": (BuildContext context) => new BuyPage(),
+        "cartPage": (BuildContext context) => new CartPage(),
         "homePage": (BuildContext context) => new MyHomePage(),
         "signupPage": (BuildContext context) => new SignUpScreen(),
       },

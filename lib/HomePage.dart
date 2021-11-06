@@ -24,6 +24,25 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
+        actions: <Widget>[
+          Padding(
+              padding: EdgeInsets.only(right: 20.0),
+              child: GestureDetector(
+                onTap: () {},
+                child: Icon(
+                  Icons.shop,
+                  size: 26.0,
+                ),
+              )),
+          Padding(
+              padding: EdgeInsets.only(right: 20.0),
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.of(context).pushNamed("cartPage");
+                },
+                child: Icon(Icons.more_vert),
+              )),
+        ],
         title: Text("Main Menu"),
         centerTitle: true,
         foregroundColor: Colors.black,
@@ -48,6 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ]),
         ),
         for (int i = 0; i < context.read<Database>().listPrice.length; i++)
+          //if (context.read<Database>().listQuantity[i] > 0)
           Container(
             height: 130,
             width: double.infinity,
@@ -71,7 +91,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       image: DecorationImage(
-                        image: AssetImage("images/image1.jpg"),
+                        image:
+                            AssetImage(context.read<Database>().listImage[i]),
                         fit: BoxFit.fill,
                       ),
                       shape: BoxShape.rectangle),
@@ -92,13 +113,13 @@ class _MyHomePageState extends State<MyHomePage> {
                               style: TextStyle(
                                   fontSize: 15.0, fontWeight: FontWeight.bold),
                             ),
-                            Text('Harga ' +
+                            Text('Rp ' +
                                 context
                                     .read<Database>()
                                     .listPrice[i]
                                     .toString()),
                             Text(
-                              'Jumlah di keranjang ' +
+                              'Amount in cart ' +
                                   context
                                       .watch<Database>()
                                       .listQuantity[i]
@@ -109,7 +130,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   global.Q = i;
                                   Navigator.of(context).pushNamed("buyPage");
                                 },
-                                child: Text('Lihat Detail'),
+                                child: Text('Shop Now'),
                                 style: ElevatedButton.styleFrom(
                                   primary: consPrimaryColor,
                                 )),
