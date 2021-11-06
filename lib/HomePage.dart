@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widget/constants.dart';
 import 'package:widget/main.dart';
 import 'package:provider/provider.dart';
 import 'providers/transferVariables.dart' as global;
@@ -30,6 +31,22 @@ class _MyHomePageState extends State<MyHomePage> {
         elevation: 0.0,
       ),
       body: ListView(children: [
+        Container(
+          padding: EdgeInsets.all(10),
+          margin: EdgeInsets.all(10),
+          child: Row(children: [
+            SizedBox(
+              height: 30,
+            ),
+            Text("Game",
+                style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold)),
+            Text("Style",
+                style: TextStyle(
+                    fontSize: 40,
+                    color: consPrimaryColor,
+                    fontWeight: FontWeight.bold)),
+          ]),
+        ),
         for (int i = 0; i < context.read<Database>().listPrice.length; i++)
           Container(
             height: 130,
@@ -88,12 +105,14 @@ class _MyHomePageState extends State<MyHomePage> {
                                       .toString(),
                             ),
                             ElevatedButton(
-                              onPressed: () {
-                                global.Q = i;
-                                Navigator.of(context).pushNamed("buyPage");
-                              },
-                              child: Text('Lihat Detail'),
-                            ),
+                                onPressed: () {
+                                  global.Q = i;
+                                  Navigator.of(context).pushNamed("buyPage");
+                                },
+                                child: Text('Lihat Detail'),
+                                style: ElevatedButton.styleFrom(
+                                  primary: consPrimaryColor,
+                                )),
                           ],
                         )))
               ],
