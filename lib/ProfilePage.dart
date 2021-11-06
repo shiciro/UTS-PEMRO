@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'constants.dart';
+
 class ProfilePage extends StatelessWidget {
   const ProfilePage({Key? key}) : super(key: key);
 
@@ -36,8 +38,27 @@ class ProfilePage extends StatelessWidget {
                     image: AssetImage('images/elon.png'), fit: BoxFit.fill),
                 shape: BoxShape.rectangle),
           ),
-          Container(),
-          Container()
+          SizedBox(
+            height: 60,
+          ),
+          Container(
+              child: Text("Elon Musk",
+                  textAlign: TextAlign.center,
+                  style:
+                      TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold))),
+          Container(
+            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 90),
+            padding: EdgeInsets.symmetric(vertical: 20),
+            child: ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamed("/");
+                },
+                child: Text("Log Out"),
+                style: ElevatedButton.styleFrom(
+                    primary: consPrimaryColor,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(29))))),
+          )
         ],
       ),
     );

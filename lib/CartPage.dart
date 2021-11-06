@@ -23,6 +23,16 @@ class _CartPageState extends State<CartPage> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
+        actions: <Widget>[
+          Padding(
+              padding: EdgeInsets.only(right: 20.0),
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.of(context).pushNamed("profilePage");
+                },
+                child: Icon(Icons.account_circle),
+              )),
+        ],
         title: Text("My Cart"),
         centerTitle: true,
         foregroundColor: Colors.black,
@@ -30,22 +40,6 @@ class _CartPageState extends State<CartPage> {
         elevation: 0.0,
       ),
       body: ListView(children: [
-        Container(
-          padding: EdgeInsets.all(10),
-          margin: EdgeInsets.all(10),
-          child: Row(children: [
-            SizedBox(
-              height: 30,
-            ),
-            Text("Game",
-                style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold)),
-            Text("Style",
-                style: TextStyle(
-                    fontSize: 40,
-                    color: consPrimaryColor,
-                    fontWeight: FontWeight.bold)),
-          ]),
-        ),
         for (int i = 0; i < context.read<Database>().listPrice.length; i++)
           if (context.read<Database>().listQuantity[i] > 0)
             Container(
