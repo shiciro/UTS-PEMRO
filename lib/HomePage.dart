@@ -21,8 +21,13 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
         title: Text("Main Menu"),
+        centerTitle: true,
+        foregroundColor: Colors.black,
+        backgroundColor: Colors.transparent,
+        elevation: 0.0,
       ),
       body: ListView(children: [
         for (int i = 0; i < context.read<Database>().listPrice.length; i++)
