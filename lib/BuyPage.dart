@@ -39,7 +39,9 @@ class _BuyPageState extends State<BuyPage> {
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
               image: DecorationImage(
-                  image: AssetImage('images/image1.jpg'), fit: BoxFit.fill),
+                  image:
+                      AssetImage(context.read<Database>().listImage[global.Q]),
+                  fit: BoxFit.fill),
               shape: BoxShape.rectangle),
         ),
         Container(

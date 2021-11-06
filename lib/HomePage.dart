@@ -28,19 +28,10 @@ class _MyHomePageState extends State<MyHomePage> {
           Padding(
               padding: EdgeInsets.only(right: 20.0),
               child: GestureDetector(
-                onTap: () {},
-                child: Icon(
-                  Icons.shop,
-                  size: 26.0,
-                ),
-              )),
-          Padding(
-              padding: EdgeInsets.only(right: 20.0),
-              child: GestureDetector(
                 onTap: () {
                   Navigator.of(context).pushNamed("cartPage");
                 },
-                child: Icon(Icons.more_vert),
+                child: Icon(Icons.shop),
               )),
         ],
         title: Text("Main Menu"),
@@ -139,6 +130,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
           ),
+        /*  
         Container(
           height: 50,
           width: double.infinity,
@@ -154,6 +146,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     blurRadius: 7,
                     offset: Offset(0, 3))
               ]),
+
           child: Row(
             children: [
               Text("Total " +
@@ -166,7 +159,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       .toString())
             ],
           ),
-        ),
+        ),*/
       ]),
     );
   }
