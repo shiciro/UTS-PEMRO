@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:widget/BuyPage.dart';
 import 'package:widget/HomePage.dart';
 import 'package:widget/LoginPage.dart';
+import 'package:widget/ProfilePage.dart';
 import 'package:widget/SignupPage.dart';
 import 'package:widget/constants.dart';
 import 'package:widget/providers/global.dart';
@@ -39,6 +40,7 @@ class MyApp extends StatelessWidget {
         "cartPage": (BuildContext context) => new CartPage(),
         "homePage": (BuildContext context) => new MyHomePage(),
         "signupPage": (BuildContext context) => new SignUpScreen(),
+        "profilePage": (BuildContext context) => new ProfilePage(),
       },
     );
   }

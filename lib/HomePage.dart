@@ -31,7 +31,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 onTap: () {
                   Navigator.of(context).pushNamed("cartPage");
                 },
-                child: Icon(Icons.shop),
+                child: Icon(Icons.shopping_bag),
+              )),
+          Padding(
+              padding: EdgeInsets.only(right: 20.0),
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.of(context).pushNamed("profilePage");
+                },
+                child: Icon(Icons.account_circle),
               )),
         ],
         title: Text("Main Menu"),
