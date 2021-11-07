@@ -37,9 +37,7 @@ class ProfilePage extends StatelessWidget {
             margin: EdgeInsets.symmetric(vertical: 10, horizontal: 90),
             padding: EdgeInsets.symmetric(vertical: 20),
             child: ElevatedButton(
-                onPressed: () {
-                  Navigator.of(context).pushNamed("/");
-                },
+                onPressed: () {},
                 child: Text("Edit Profile"),
                 style: ElevatedButton.styleFrom(
                     primary: consPrimaryColor,

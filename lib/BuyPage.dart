@@ -46,6 +46,11 @@ class _BuyPageState extends State<BuyPage> {
               shape: BoxShape.rectangle),
         ),
         Container(
+            child: Text(
+          context.read<Database>().listItem[global.Q],
+          style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
+        )),
+        Container(
           margin: EdgeInsets.all(10),
           padding: EdgeInsets.all(10),
           width: double.infinity,

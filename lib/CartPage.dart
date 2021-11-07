@@ -22,7 +22,7 @@ class _CartPageState extends State<CartPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: <Widget>[
+        /*actions: <Widget>[
           Padding(
               padding: EdgeInsets.only(right: 20.0),
               child: GestureDetector(
@@ -32,6 +32,7 @@ class _CartPageState extends State<CartPage> {
                 child: Icon(Icons.account_circle),
               )),
         ],
+        */
         title: Text("My Cart"),
         centerTitle: true,
         foregroundColor: Colors.black,

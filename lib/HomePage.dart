@@ -33,13 +33,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 title: const Text('Your Cart'),
                 onTap: () {
                   Navigator.of(context).pushNamed("cartPage");
-                  Navigator.pop(context);
+                  //Navigator.pop(context);
                 }),
             ListTile(
                 title: const Text('Profile'),
                 onTap: () {
                   Navigator.of(context).pushNamed("profilePage");
-                  Navigator.pop(context);
+                  //Navigator.pop(context);
                 })
           ],
         ),
