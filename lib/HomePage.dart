@@ -22,8 +22,32 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBodyBehindAppBar: true,
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            const DrawerHeader(
+                decoration: BoxDecoration(color: consPrimaryColor),
+                child: Text("Menu")),
+            ListTile(
+                title: const Text('Your Cart'),
+                onTap: () {
+                  Navigator.of(context).pushNamed("cartPage");
+                  Navigator.pop(context);
+                }),
+            ListTile(
+                title: const Text('Profile'),
+                onTap: () {
+                  Navigator.of(context).pushNamed("profilePage");
+                  Navigator.pop(context);
+                })
+          ],
+        ),
+      ),
+      //extendBodyBehindAppBar: true,
       appBar: AppBar(
+        //automaticallyImplyLeading: false,
+        /*
         actions: <Widget>[
           Padding(
               padding: EdgeInsets.only(right: 20.0),
@@ -41,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 child: Icon(Icons.account_circle),
               )),
-        ],
+        ],*/
         title: Text("Main Menu"),
         centerTitle: true,
         foregroundColor: Colors.black,

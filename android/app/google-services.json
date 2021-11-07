@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "9404506471",
+    "project_id": "uts-pemro",
+    "storage_bucket": "uts-pemro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9404506471:android:6dae3f34698548519acfc2",
+        "android_client_info": {
+          "package_name": "com.shiciro.GameStyle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9404506471-4obv53c5pdbe7s6js0ua0nms18k341lv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQM91a1TOn6Jbd9bRXJaGlFw2pvdr7A4Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9404506471-4obv53c5pdbe7s6js0ua0nms18k341lv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

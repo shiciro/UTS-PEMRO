@@ -22,7 +22,7 @@ class LoginPage extends StatelessWidget {
               style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold),
             ),
           ]),
-        ),
+        ), //Text judul Log in
         RoundedInputField(
           hintText: "Your Email",
           onChanged: (value) {},

@@ -9,16 +9,6 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: <Widget>[
-          Padding(
-              padding: EdgeInsets.only(right: 20.0),
-              child: GestureDetector(
-                onTap: () {
-                  Navigator.of(context).pushNamed("cartPage");
-                },
-                child: Icon(Icons.shopping_bag),
-              )),
-        ],
         title: Text("Profile"),
         centerTitle: true,
         foregroundColor: Colors.black,
@@ -38,9 +28,6 @@ class ProfilePage extends StatelessWidget {
                     image: AssetImage('images/elon.png'), fit: BoxFit.fill),
                 shape: BoxShape.rectangle),
           ),
-          SizedBox(
-            height: 60,
-          ),
           Container(
               child: Text("Elon Musk",
                   textAlign: TextAlign.center,
@@ -53,9 +40,22 @@ class ProfilePage extends StatelessWidget {
                 onPressed: () {
                   Navigator.of(context).pushNamed("/");
                 },
-                child: Text("Log Out"),
+                child: Text("Edit Profile"),
                 style: ElevatedButton.styleFrom(
                     primary: consPrimaryColor,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(29))))),
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 90),
+            padding: EdgeInsets.symmetric(vertical: 20),
+            child: ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamed("/");
+                },
+                child: Text("Log Out"),
+                style: ElevatedButton.styleFrom(
+                    primary: Colors.red,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(29))))),
           )

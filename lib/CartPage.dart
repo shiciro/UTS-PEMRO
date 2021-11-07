@@ -21,7 +21,6 @@ class _CartPageState extends State<CartPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBodyBehindAppBar: true,
       appBar: AppBar(
         actions: <Widget>[
           Padding(
@@ -105,6 +104,17 @@ class _CartPageState extends State<CartPage> {
                 ],
               ),
             ),
+        Container(
+          margin: EdgeInsets.symmetric(vertical: 10, horizontal: 90),
+          padding: EdgeInsets.symmetric(vertical: 20),
+          child: ElevatedButton(
+              onPressed: () {},
+              child: Text("Check Out"),
+              style: ElevatedButton.styleFrom(
+                  primary: consPrimaryColor,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(29))))),
+        ),
         Container(
           height: 50,
           width: double.infinity,

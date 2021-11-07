@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:widget/main.dart';
 import 'package:provider/provider.dart';
+import 'constants.dart';
 import 'providers/transferVariables.dart' as global;
 import 'providers/global.dart';
 
@@ -84,29 +85,20 @@ class _BuyPageState extends State<BuyPage> {
           width: double.infinity,
           height: 100,
           decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-              boxShadow: [
-                BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3))
-              ]),
-          child: Row(
-            children: [
-              IconButton(
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Container(
+            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 90),
+            padding: EdgeInsets.symmetric(vertical: 10),
+            child: ElevatedButton(
                 onPressed: () {
-                  Navigator.pop(context);
-                  //_confirm();
+                  Navigator.of(context).pushNamed("homePage");
                 },
-                icon: Icon(Icons.check_circle),
-              ),
-              IconButton(
-                onPressed: () {},
-                icon: Icon(Icons.cancel),
-              )
-            ],
+                child: Text("Shop Now"),
+                style: ElevatedButton.styleFrom(
+                    primary: consPrimaryColor,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(29))))),
           ),
         ),
       ]),
