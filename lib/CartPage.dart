@@ -106,17 +106,6 @@ class _CartPageState extends State<CartPage> {
               ),
             ),
         Container(
-          margin: EdgeInsets.symmetric(vertical: 10, horizontal: 90),
-          padding: EdgeInsets.symmetric(vertical: 20),
-          child: ElevatedButton(
-              onPressed: () {},
-              child: Text("Check Out"),
-              style: ElevatedButton.styleFrom(
-                  primary: consPrimaryColor,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(29))))),
-        ),
-        Container(
           height: 50,
           width: double.infinity,
           padding: EdgeInsets.all(10),
@@ -143,6 +132,17 @@ class _CartPageState extends State<CartPage> {
                       .toString())
             ],
           ),
+        ),
+        Container(
+          margin: EdgeInsets.symmetric(vertical: 10, horizontal: 90),
+          padding: EdgeInsets.symmetric(vertical: 20),
+          child: ElevatedButton(
+              onPressed: () {},
+              child: Text("Check Out"),
+              style: ElevatedButton.styleFrom(
+                  primary: consPrimaryColor,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(29))))),
         ),
       ]),
     );
