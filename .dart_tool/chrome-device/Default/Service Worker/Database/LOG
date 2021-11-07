@@ -1,4 +1,2 @@
-2021/11/07-01:43:35.646 4cd0 Reusing MANIFEST C:\Users\derry\AppData\Local\Temp\flutter_tools.a422e4f3\flutter_tools_chrome_device.63cc661\Default\Service Worker\Database/MANIFEST-000001
-2021/11/07-01:43:35.651 4cd0 Recovering log #3
-2021/11/07-01:43:35.651 4cd0 (ignoring error) C:\Users\derry\AppData\Local\Temp\flutter_tools.a422e4f3\flutter_tools_chrome_device.63cc661\Default\Service Worker\Database/000003.log: dropping 2138 bytes; Corruption: checksum mismatch
-2021/11/07-01:43:35.652 4cd0 Reusing old log C:\Users\derry\AppData\Local\Temp\flutter_tools.a422e4f3\flutter_tools_chrome_device.63cc661\Default\Service Worker\Database/000003.log 
+2021/11/07-16:38:51.801 5068 Creating DB C:\Users\derry\AppData\Local\Temp\flutter_tools.c81326b9\flutter_tools_chrome_device.e72a2fe7\Default\Service Worker\Database since it was missing.
+2021/11/07-16:38:51.810 5068 Reusing MANIFEST C:\Users\derry\AppData\Local\Temp\flutter_tools.c81326b9\flutter_tools_chrome_device.e72a2fe7\Default\Service Worker\Database/MANIFEST-000001

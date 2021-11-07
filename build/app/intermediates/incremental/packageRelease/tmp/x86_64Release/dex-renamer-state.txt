@@ -1,0 +1,4 @@
+#Sun Nov 07 16:37:14 ICT 2021
+base.0=C\:\\Users\\derry\\Documents\\GitHub\\UTS-PEMRO\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

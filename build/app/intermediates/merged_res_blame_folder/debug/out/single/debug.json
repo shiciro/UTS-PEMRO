@@ -12,12 +12,12 @@
         "source": "C:\\Users\\derry\\Documents\\GitHub\\UTS-PEMRO\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\derry\\Documents\\GitHub\\UTS-PEMRO\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\derry\\Documents\\GitHub\\UTS-PEMRO\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\derry\\Documents\\GitHub\\UTS-PEMRO\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\derry\\Documents\\GitHub\\UTS-PEMRO\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\derry\\Documents\\GitHub\\UTS-PEMRO\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\derry\\Documents\\GitHub\\UTS-PEMRO\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\derry\\Documents\\GitHub\\UTS-PEMRO\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
